@@ -19,6 +19,7 @@ section:first-of-type{
 
 header{
     @apply flex flex-col justify-between h-[47.81rem]
+    
 }
 
 

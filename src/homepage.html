@@ -14,13 +14,13 @@
     <title>SafeHerTrip</title>
 </head> 
 <body class="flex flex-col font-nunito ">
-    <section class="h-[47.81rem] bg-[#6F3891] px-[6rem] py-[2.5rem]">
+    <section class="h-[47.81rem]  bg-no-repeat bg-cover px-[3rem] py-[2.5rem]" style="background-image: url(../Assets/Images/Frame\ 173.png);">
         <header class=" flex flex-col justify-between h-[47.81rem]">
             <nav class="flex flex-row">
                 <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[5.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
                     <span>
                         <li class="">
-                            <img src="../Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[13.3rem] h-[3.09rem] pl-[0.56rem] gap-[0.8rem]">
+                            <img src=" ../Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[13.9rem] h-[4.23rem] pl-[0.56rem] gap-[0.8rem] ">
                         </li>
                     </span>
                     <span class="m-auto flex">
@@ -33,16 +33,19 @@
                         <li class="flex w-[10.125rem] h-[2rem]" >
                             <a href="#" id="contact" class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400]   hover:font-700 inline">Contact</a>
                             <img src="../Assets/Images/arrow-downward.svg" alt="arrow-downward" class="w-[1.5rem] h-[2.3rem]">
-                            <ul class="hidden absolute bg-black rounded-lg shadow-md py-2 mt-2">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Send a Message</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Emergency & Help</a></li>
+                            <ul class=" w-[14.75rem] h-[16.125rem] hidden absolute bg-[#6F3891]  text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400]   ">
+                                <li><button>
+                                    <img src="../Assets/contact-page-images/close-icon" alt="" class="w-[5rem]">
+                                </button></li>
+                                <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
+                                <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg"><a href="#">Send a Message</a></li>
+                                <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="#">FAQ</a></li>
+                                <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.2rem] rounded-lg"><a href="#">Emergency & Help</a></li>
                             </ul>
                         </li>
                     </span>
                     <span>
-                        <li class="w-[15.5rem]">
+                        <li class="w-[15.5rem] mt-[1rem]">
                             <a href="#" target="_blank" rel="noopener noreferrer" class="w-[11.5rem] h-[4.06rem] rounded-[7.4rem] bg-[#F9B5FF] px-[1.69rem] py-[0.4rem] gap-[2.6rem] font-[500] text-[1.125rem] items-center text-[#210B26]">Sign Up</a>
                         </li>
                     </span>
@@ -50,7 +53,7 @@
             </nav>
             <article class="w-[48.44rem] flex justify-between">
                 <div class="">
-                    <h1 class=" h-[11.5rem] font-[900] text-[4.4rem] text-[#FCFCFC] leading-[4.375rem] mt-[4.69rem] mb-[1.25rem]">Secure Transportation<br>Anytime, Anywhere</h1>
+                    <h1 class=" h-[11.5rem] font-[900] text-[4.4rem] text-[#FCFCFC] leading-[4.375rem] mb-[1.25rem]">Secure Transportation<br>Anytime, Anywhere</h1>
                     <p class="h-[8.31rem] font-[400] text-[1.5rem] leading-[2.05rem] text-[#FCFCFC] mb-[1.25rem]">
                         Experience peace of mind with HerSafe Ride, We prioritize your safety, providing secure transportation options, especially during late hours or in unfamiliar areas.
                     </p>
@@ -65,12 +68,11 @@
         </header>
     </section>
     <main class="flex flex-col">
-        <section class=" mt-[1.875rem]  flex flex-col bg-[#FCFCFC]">
+        <section class=" my-[1.875rem]  flex flex-col bg-[#FCFCFC]">
             <h2 class="w-[11.31rem] h-[3.44rem] font-[700] text-[2.5rem] text-[#210B26] flex m-auto">Features</h2>
-            <article class="flex flex-row h-[15,7rem] mt-[2rem] ">
+            <article class="flex flex-row h-[15,7rem] mt-[2rem] ml-[8rem]">
                 <div class="flex flex-col  p-[2.5rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]">
                     <img src="../Assets/Images/real-time-tracking.svg" alt="real-time-tracking" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
-
                     <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Real-time Tracking</h3>
                     <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Stay connected with real-time tracking. Know where your ride is at all times, ensuring a worry-free journey.</p>
                 </div>
@@ -86,44 +88,50 @@
                 </div>
             </article>
         </section>
-        <section class="bg-[#FCDAFF1A] flex flex-col mb-[2.19rem] ">
-            <article class="w-[31.5rem] h-[9.44rem] flex m-auto flex-col ">
+        <section class="bg-[#FCDAFF1A] flex flex-col my-[2.19rem] pt-[2.3rem]  h-[93.7rem]">
+            <article class="w-[31.5rem]  flex m-auto flex-col mb-[4.2rem] ">
                 <h2 class="font-[Onest] font-[700] text-[2.5rem] leading-[3.19rem] text-center text-[#210B26]">How HerSafe Ride Works</h2>
-                <p class="w-[25.75rem] mt-[0.6rem] ml-[2.9rem] mb-[4.7rem] font-[Onest] font-[400] text-[1rem] leading-[1.3rem] text-center text-[#210B26]">Curious about how HerSafe Ride ensures your safety? Let us give you a glimpse into our seamless process. Your peace of mind is our mission.</p>
+                <p class="w-[25.75rem] mt-[0.6rem] ml-[2.9rem]  font-[Onest] font-[400] text-[1rem] leading-[1.3rem] text-center text-[#210B26]">Curious about how HerSafe Ride ensures your safety? Let us give you a glimpse into our seamless process. Your peace of mind is our mission.</p>
             </article>
-            <article class="flex flex-row flex-wrap justify-center  h-[86.56rem] items-center">
-                <div class="w-[24.75rem] flex justify-center items-end flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">1</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Download the App</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-end text-[#210B26]">Get started by downloading the HerSafe Ride app from the App Store or Google Play Store. It's free and easy to use</p>
+            <article class="flex flex-row flex-wrap h-[86.56rem] m-auto">
+                <div class="mt-[11.61rem] mr-[2.3rem]">
+                    <div class="w-[24.75rem] mb-[7.75rem] flex justify-center items-end flex-col ">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">1</h2>
+                        <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Download the App</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] items-end text-[#210B26]">Get started by downloading the HerSafe Ride app from the App Store or Google Play Store. It's free and easy to use</p>
+                    </div>
+                    <div class="w-[24.75rem] flex justify-center items-end flex-col  ">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">4</h2>
+                        <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Track Your Ride</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] items-end text-[#210B26]">Once your ride is confirmed, you can track the location of your driver in real-time on the app. You'll receive updates on their arrival time, Sit back, and enjoy the ride.</p>
+                    </div>
                 </div>
-                <div class="w-[23.6rem] flex justify-center items-center flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">2</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-center ">Sign Up</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-center  text-[#210B26]">Create your HerSafe Ride account and provide some basic information to get started. Don't worry; we keep your personal information safe and secure</p>
+                <div>
+                    <div class="w-[23.6rem] flex justify-center items-center flex-col mb-[1.5rem]">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">2</h2>
+                        <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-center ml-[7.2rem] ">Sign Up</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] flex items-center text-[#210B26]">Create your HerSafe Ride account and provide some basic information to get started. Don't worry; we keep your personal information safe and secure</p>
+                    </div>
+                    <div class="">
+                        <img src="../Assets/Images/steps.svg" alt="" class="w-[23.6rem] h-[39.07rem]">
+                    </div>
+                    <div class="w-[23.6rem] flex justify-center items-center flex-col mt-[2.3rem] ">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">5</h2>
+                        <h3 class="w-[15rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-center ">Make Your Payment</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] items-center text-[#210B26]">Our professional driver will ensure you reach your destination safely and on time. Make payment with your card or transfer.</p>
+                    </div>
                 </div>
-                <div class="w-[24.6rem] flex justify-center items-end flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">3</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Book Your Ride</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-end text-[#210B26]">Enter your pickup and drop-off locations, select the type of vehicle you prefer, and choose your desired pickup time. With just a few taps, your ride will be confirmed.</p>
-                </div>
-                <div class=" absolute bg-[#6F3891] w-[25.25rem] h-[25.9rem] rounded-[25.25rem]">
-                    <img src="../Assets/Images/steps.svg" alt="" class="w-[23.6rem]">
-                </div>
-                <div class="w-[24.75rem] flex justify-center items-end flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">4</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Track Your Ride</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-end text-[#210B26]">Once your ride is confirmed, you can track the location of your driver in real-time on the app. You'll receive updates on their arrival time, Sit back, and enjoy the ride.</p>
-                </div>
-                <div class="w-[24.75rem] flex justify-center items-end flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">5</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Make Your Payment</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-end text-[#210B26]">Our professional driver will ensure you reach your destination safely and on time. Make payment with your card or transfer.</p>
-                </div>
-                <div class="w-[24.75rem] flex justify-center items-end flex-col ">
-                    <h2 class="w-[4.9rem] h-[4.75rem] rounded-[2rem] p-[1rem] Onest font-[700] text-[2.5rem] text-[#6F3891] bg-[#F9B5FF]  items-center leading-[3.2rem]">6</h2>
-                    <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Rate Your Experience</h3>
-                    <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1.25rem] leading-[1.6rem] items-end text-[#210B26]">After your ride, don't forget to rate your driver and provide feedback. Your input helps us continually improve our service and maintain our high standards.</p>
+                <div>
+                    <div class="w-[23.6rem] flex justify-center items-end flex-col">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-end leading-[3.2rem]">3</h2>
+                        <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Book Your Ride</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] items-end text-[#210B26]">Enter your pickup and drop-off locations, select the type of vehicle you prefer, and choose your desired pickup time. With just a few taps, your ride will be confirmed.</p>
+                    </div>
+                    <div class="w-[23.6rem] flex justify-center items-end flex-col">
+                        <h2 class="w-[3.75rem] h-[3.75rem] rounded-[2rem] pt-[0.3rem] pl-[1.2rem] font-[700] text-[2rem] text-[#6F3891] bg-[#F9B5FF]  items-end leading-[3.2rem]">6</h2>
+                        <h3 class="w-[13.4rem] h-[1.9rem] font-[Onest] font-[700] text-[1.5rem] mb-[0.6rem] text-[#210B26] items-end ">Rate Your Experience</h3>
+                        <p class="w-[23.5rem] h-[6.5rem] font-[Onest] font-[400] text-[1rem] leading-[1.5rem] items-end text-[#210B26]">After your ride, don't forget to rate your driver and provide feedback. Your input helps us continually improve our service and maintain our high standards.</p>
+                    </div>
                 </div>
             </article>
         </section>
