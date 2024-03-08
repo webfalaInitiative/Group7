@@ -9,17 +9,7 @@ body,html{
     box-sizing: border-box
 }
 
-body{
-    @apply flex flex-col font-nunito 
-}
 
-section:first-of-type{
-    @apply bg-[#6F3891] px-[6rem] py-[2.5rem]
-}
-
-header{
-    @apply flex flex-col justify-between h-[47.81rem]
-}
 
 
 /* ul{
