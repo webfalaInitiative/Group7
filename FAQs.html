@@ -33,16 +33,20 @@
                         <a href="#">About</a>
                     </li>
                     <li class="flex w-[10.125rem] h-[2rem]" >
-                        <a href="#" id="contact" class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400]   hover:font-[700] inline">Contact</a>
-                        <img src="../Assets/Images/arrow-downward.svg" alt="arrow-downward" class="w-[1.5rem] h-[2.3rem]">
-                        <ul class=" w-[14.75rem] h-[16.125rem] hidden absolute bg-[#6F3891]  text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400]   ">
-                            <li><button>
-                                <img src="../Assets/contact-page-images/close-icon" alt="" class="w-[5rem]">
-                            </button></li>
-                            <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
-                            <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg"><a href="#">Send a Message</a></li>
-                            <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="#">FAQ</a></li>
-                            <li class="my-[1.5rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.2rem] rounded-lg"><a href="#">Emergency & Help</a></li>
+                        <a href="" id="contact" class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400]   hover:font-700 inline-flex">Contact
+                             <img src="../Assets/Images/arrow-downward.svg" alt="arrow-downward" class="w-[1.5rem] h-[2rem]">
+                        </a>
+                        <ul class=" w-[14.75rem] h-[18.125rem] hidden absolute bg-[#6F3891]  text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center  " id="dropdown">
+                            <li class="flex ml-[7rem]">
+                                <button id="closeDropdown">
+                                    <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
+                                </button>
+                            </li>
+                            <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
+                            <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg w-[10.125rem]"><a href="send-a-message.html">Send a Message</a></li>
+                            <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="./FAQs.html">FAQ</a></li>
+                            <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class=" ml-[1.5rem]">Emergency</a></li>
+                            <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="help.html">Help</a></li>
                         </ul>
                     </li>
                 </span>
@@ -56,32 +60,31 @@
    </header>
    <main class="flex flex-col">
         <section class="bg-[#6F3891] py-[1.25rem] pl-[3.125rem] pr-[72.4rem] ">
-            <h1 class="text-[#FCFCFC] w-[14.4rem] h-[3.5rem] font-[700] text-[2.7rem]">FAQs</h1>
+            <h1 class="text-[#FCFCFC] w-[14.4rem] h-[3.5rem] font-[700] text-[2.7rem] ">FAQs</h1>
         </section>
         <section class="bg-[#FCDAFF1A] flex px-[6rem]">
-            <article class="flex ">
-                <h2 class="w-[31.25rem] h-[7.6rem] font-[700] text-[2.8rem] leading-[3.8rem] text-[#210B26] mt-[9rem]">Frequently Asked Questions</h2>
+            <article class="flex">
+                <h2 class="w-[31.25rem] h-[7.6rem] font-[700] text-[2.8rem] leading-[3.8rem] text-[#210B26] mt-[9rem] fixed">Frequently Asked Questions</h2>
             </article>
-            <article class="w-[45.6rem] h-[50.8rem] flex flex-col mt-[2.2rem] text-[#210B26] font-[700] font-[Nunito]">
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem]">
+            <article class="w-[45.6rem] h-[50.8rem] flex flex-col mt-[2.2rem] text-[#210B26] font-[700] font-[Nunito] ml-[32rem]">
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[2.19rem]">
                     <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem]  ">How do I book a ride?
                     </h3>
                     <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem]">To book a ride, simply open our app, enter your pickup and drop-off locations, choose your preferred vehicle option, and confirm your ride. It's that easy!</p>
                 </div>
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem]">
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[4.25rem]">
                     <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem]  ">Can I request a female driver?
                     </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem]">Yes, you can request a female driver. Our app allows you to specify your preference for a female driver when booking your ride. Simply select the option in the app, and we'll do our best to accommodate your request.</p>
+                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem] ">Yes, you can request a female driver. Our app allows you to specify your preference for a female driver when booking your ride. Simply select the option in the app, and we'll do our best to accommodate your request.</p>
                 </div>
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem]">
-                    <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">How do I book a ride?
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[6.19rem]">
+                    <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">What safety measures are in place for passengers?
                     </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">To book a ride, simply open our app, enter your pickup and drop-off locations, choose your preferred vehicle option, and confirm your ride. It's that easy!</p>
+                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Your safety is paramount. We verify our drivers, provide real-time tracking, and offer 24/7 emergency assistance. Rest assured, we prioritize your well-being every step of the way.</p>
                 </div>
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem]">
-                    <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">How do I book a ride?
-                    </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">To book a ride, simply open our app, enter your pickup and drop-off locations, choose your preferred vehicle option, and confirm your ride. It's that easy!</p>
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[19.19rem]">
+                    <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">What happens in case of an emergency during a ride?</h3>
+                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Our app includes an Emergency Assistance feature. Tap the button, and our support team will assist you in real-time, coordinating with local authorities if necessary</p>
                 </div>
             </article>
         </section>
