@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Sign-in-page</title>
+</head>
+<body class="font-[Onest] px-[5.6rem] py-[3.25rem]">
+   <header class=" flex justify-between mb-[8.3rem]">
+        <img src="Assets/Images/logo.svg" alt="HerSafeRide-logo">
+        <a href="index.html" class="w-[3.6rem] h-[1.9rem] font-[700] text-[1.5rem] text-[#6F3891]">Back</a>
+   </header> 
+   <main>
+        <section class="mb-[4.5rem]">
+            <h1 class="w-[13.7rem] h-[1.9rem] ml-[31rem] m-auto font-[700] text-[1.5rem] text-[#6F3891] mb-[0.875rem]">Sign In</h1>
+            <img src="Assets/Images/underline.svg" alt="underline" class="m-auto">
+        </section>
+        <section class="flex w-[55.87rem] h-[32.5rem] m-auto ">
+            <article class="w-[54.625rem] h-[4.75rem] text-[1.5rem]">
+                <div class="py-[2.9rem] px-[4.125rem] flex rounded-t-[1.875rem] rounded-b-[1.875rem] border-y-[0.1875rem]  border-solid border-[#6F3891]">
+                  <form action="" class="flex flex-col flex-wrap w-[55.875rem]">
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[1.7rem]">
+                         Email
+                            <input type="email" id="name" class=" w-[49.4rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" required >
+                        </label>
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[3.69rem] pr-[3.75rem]">
+                            Password
+                            <input type="password" id="name" class=" w-[49.43rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" required >
+                        </label>
+                        <div class="flex">
+                        <button class="w-[21.5rem] h-[3.9rem] rounded-[1.875rem] bg-[#6F3891] text-[#F9B5FF] font-[700] text-[1.5rem] mr-[7.3rem]" type="submit">Sign 
+                            In
+                        </button>
+                        <a href="#" class="w-[19.06rem] h-[1.94rem]  ">Already registered? 
+                        </a>
+                      </div>
+                  </form>  
+                </div>
+            </article>
+            <!-- <article>
+                <div class="bg-[#F9B5FF] w-[27.3rem] h-[4.75rem] rounded-tr-[1.875rem]">
+                    <h2 class=" w-[7.06rem] h-[1.9rem] m-auto pt-[1.3rem] font-[800] text-[1.5rem] text-[#210B26]">Driver</h2>
+                </div>
+            </article> -->
+        </section>
+   </main>
+</body> 
