@@ -5,57 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>SafeHerTrip</title>
 </head> 
-<body class="flex flex-col font-[Onest] ">
-    <section class=" w-[93.92rem] h-[47.81rem]  bg-no-repeat bg-cover px-[3rem] py-[2.5rem]" style="background-image: url(./Assets/Images/Frame\ 173.png);">
-        <header class=" flex flex-col justify-between h-[43.81rem]">
+<body class="flex flex-col font-[Onest]">
+    <!-- MOBILESCREEN -->
+    <section class="lg:hidden block min-w-[20rem] max-w-[48rem] h-[16.9rem] bg-[#6F3891] px-[1.25rem]">
+        <header class=" flex flex-col justify-between ">
             <nav class="flex flex-row">
-                <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[4.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
-                    <span>
-                        <li class="">
-                            <img src=" ../Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[13.9rem] h-[3.23rem] pl-[0.56rem] gap-[0.8rem] ">
+                <ul class="flex justify-between  w-[81.25rem] h-[4.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
+                    <span class="items-start">
+                        <li>
+                            <img src="./Assets/contact-page-images/footer-logo.svg" alt="SafeHerTrip-logo" class="">
                         </li>
                     </span>
-                    <span class=" flex mt-[0.5rem] m-auto">
-                        <li>
-                            <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem]  hover:font-700">Home</a>
-                        </li>
-                        <li class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400]hover:font-700">
-                            <a href="./about.html">About</a>
-                        </li>
-                        <li class="flex w-[10.125rem] h-[2rem]" >
-                            <a href="" id="contact" class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400]   hover:font-700 inline-flex">Contact
-                                 <img src="../Assets/Images/arrow-downward.svg" alt="arrow-downward" class="w-[1.5rem] h-[2rem]">
-                            </a>
-                            <ul class=" w-[14.75rem] h-[18.125rem] hidden absolute bg-[#6F3891]  text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center  " id="dropdown">
+                    <div class="lg:hidden inline-flex items-end" >
+                        <!-- MOBILESCREEN -->
+                        <li class="  w-[10.125rem] h-[2rem]">
+                            <img src="./Assets/contact-page-images/menu-line.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
+                            <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center" id="menudrop">
                                 <li class="flex ml-[7rem]">
-                                    <button id="closeDropdown">
+                                    <button id="menu-close">
                                         <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
                                     </button>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem] hover:font-700">Home</a>
+                                </li>
+                                <li class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400] hover:font-700">
+                                    <a href="./about.html">About</a>
                                 </li>
                                 <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
                                 <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg w-[10.125rem]"><a href="send-a-message.html">Send a Message</a></li>
                                 <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="./FAQs.html">FAQ</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class=" ml-[1.5rem]">Emergency</a></li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class="ml-[1.5rem]">Emergency</a></li>
                                 <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="help.html">Help</a></li>
                             </ul>
-                        </li>
-                    </span>
-                    <span>
-                        <li class="w-[12rem] h-[4.2rem] mt-[0.7rem]">
-                            <a href="sign-in.html" target="_blank" rel="noopener noreferrer" class="w-[6.8rem] h-[1.5rem] rounded-[7.8rem] bg-[#F9B5FF] px-[2.6rem] py-[0.57rem] gap-[2.6rem] font-[500] text-[1.125rem] items-center text-[#210B26]">Sign Up</a>
-                        </li>
-                    </span>
+                        </li> 
+                    </div>
                 </ul>
             </nav>
-            <article class="w-[48.44rem] flex justify-between">
+            <div class="">
+                <h1 class=" w-[13.44rem] h-[2.5rem] font-[700] text-[1rem] text-[#FCFCFC] leading-[1.275rem] mb-[0.6rem] mt-[1.11rem]">Secure Transportation Anytime, Anywhere</h1>
+                <p class="h-[3.5rem] font-[400] text-[0.625rem] leading-[0.8rem] text-[#FCFCFC] mb-[1.25rem]">
+                    Experience peace of mind with HerSafe Ride, We prioritize your safety, providing secure transportation options, especially during late hours or in unfamiliar areas.
+                </p>
+                <a href="#" class="w-[10.56rem] h-[4.125rem] rounded-[1.9rem] p-[1rem] gap-[1rem] bg-[#F9B5FF] ">
+                    <button class="font-[700] text-[1.25rem] leading-[1.9rem] text-[#210B26] mb-[9.5rem]">Get the App</button>
+                </a>
+            </div>
+        </header>
+    </section>
+    <!-- LARGESCREEN -->
+    <section class=" lg:block hidden lg:w-[93.92rem] w-[22.93rem] lg:h-[47.81rem] h-[16.93rem] bg-no-repeat bg-cover px-[3rem] py-[2.5rem]" style="background-image: url(./Assets/Images/Frame\ 173.png);">
+        <header class=" flex flex-col justify-between h-[43.81rem]">
+            <nav class="flex flex-row">
+                <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[4.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
+                    <span>
+                        <li>
+                            <img src="./Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[13.9rem] h-[3.23rem] l-[0.56rem] ">
+                        </li>
+                    </span>
+                    <!-- LARGESCREEN -->
+                    <div class="lg:flex hidden">
+                        <span class="flex mt-[0.5rem] m-auto ">
+                            <li>
+                                <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem] hover:font-700">Home</a>
+                            </li>
+                            <li class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400] hover:font-700">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="flex w-[10.125rem] h-[2rem]">
+                                <a href="" id="contact" class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400] hover:font-700 inline-flex">
+                                    Contact
+                                    <img src="../Assets/Images/arrow-downward.svg" alt="arrow-downward" class="w-[1.5rem] h-[2rem]">
+                                </a>
+                                <ul class="w-[14.75rem] h-[18.125rem] hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center" id="dropdown">
+                                    <li class="flex ml-[7rem]">
+                                        <button id="closeDropdown">
+                                            <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
+                                        </button>
+                                    </li>
+                                    <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
+                                    <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg w-[10.125rem]"><a href="send-a-message.html">Send a Message</a></li>
+                                    <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="./FAQs.html">FAQ</a></li>
+                                    <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class="ml-[1.5rem]">Emergency</a></li>
+                                    <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="help.html">Help</a></li>
+                                </ul>
+                            </li> 
+                        </span>
+                        <span>
+                            <li class="w-[12rem] h-[4.2rem] mt-[0.7rem]">
+                                <a href="sign-in.html" target="_blank" rel="noopener noreferrer" class="w-[6.8rem] h-[1.5rem] rounded-[7.8rem] bg-[#F9B5FF] px-[2.6rem] py-[0.57rem] gap-[2.6rem] font-[500] text-[1.125rem] items-center text-[#210B26]">Sign Up</a>
+                            </li>
+                        </span>
+                    </div>
+                    <div class="lg:hidden flex">
+                        <!-- MOBILESCREEN -->
+                        <li class="  w-[10.125rem] h-[2rem]">
+                            <img src="./Assets/contact-page-images/menu-line.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
+                            <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center" id="menudrop">
+                                <li class="flex ml-[7rem]">
+                                    <button id="menu-close">
+                                        <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
+                                    </button>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem] hover:font-700">Home</a>
+                                </li>
+                                <li class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400] hover:font-700">
+                                    <a href="./about.html">About</a>
+                                </li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg w-[10.125rem]"><a href="send-a-message.html">Send a Message</a></li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="./FAQs.html">FAQ</a></li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class="ml-[1.5rem]">Emergency</a></li>
+                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="help.html">Help</a></li>
+                            </ul>
+                        </li> 
+                    </div>
+                </ul>
+            </nav>
+            <article class="lg:w-[48.44rem] w-[22.9rem]  flex justify-between">
                 <div class="">
                     <h1 class=" h-[11.5rem] font-[900] text-[4.4rem] text-[#FCFCFC] leading-[4.375rem] mb-[1.25rem]">Secure Transportation<br>Anytime, Anywhere</h1>
                     <p class="h-[8.31rem] font-[400] text-[1.5rem] leading-[2.05rem] text-[#FCFCFC] mb-[1.25rem]">
@@ -74,18 +154,21 @@
     <main class="flex flex-col">
         <section class=" my-[1.875rem]  flex flex-col bg-[#FCFCFC]">
             <h2 class="w-[11.31rem] h-[3.44rem] font-[700] text-[2.5rem] text-[#210B26] flex m-auto">Features</h2>
-            <article class="flex flex-row h-[15,7rem] mt-[2rem] ml-[8rem]">
-                <div class="flex flex-col  p-[2.5rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]">
+            <article class="lg:flex  block flex-row h-[15,7rem] mt-[2rem] ml-[8rem]">
+                <div class="flex flex-col  p-[2.5rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                     <img src="../Assets/Images/real-time-tracking.svg" alt="real-time-tracking" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
                     <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Real-time Tracking</h3>
                     <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Stay connected with real-time tracking. Know where your ride is at all times, ensuring a worry-free journey.</p>
                 </div>
-                <div class="flex flex-col p-[2.5rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]">
+                <div class="flex flex-col p-[2.5rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                     <img src="../Assets/Images/driver-verification.svg" alt="driver-verification" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
                     <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Driver Verification</h3>
                     <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Rest assured knowing our drivers are vetted for safety & reliability </p>
                 </div>
-                <div class="flex flex-col p-[2.5rem]  mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]">
+                <div class="flex flex-col p-[2.5rem]  mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                     <img src="../Assets/Images/emergency-assistant.svg" alt="emergency-assistant" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
                     <h3 class="w-[] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Emergency Assistance </h3>
                     <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] ml-[1rem] leading-[1.4rem] text-center">Need assistance? Our emergency buttons make it easy to get help when you need it most.</p>
@@ -142,7 +225,7 @@
         <section class=" mt-[1.875rem] mb-[3.75rem] h-[36rem] w-[78.7rem] flex flex-col m-auto bg-[#FCFCFC]">
             <h2 class="w-[12.2rem] h-[3.4rem] font-[Nunito] font-[700] text-[2.5rem] text-[#210B26] m-auto ">Feedbacks</h2>
             <article class=" w-[79rem] h-[31.25rem]  rounded-[1.8rem]  bg-[#FCDAFF1A] flex flex-row justify-between">
-                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem] ">
+                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem]" data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem]  flex flex-col">
                         <p class="w-[17.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
@@ -156,7 +239,7 @@
                         <p class=" w-[8.9rem] h-[1.3rem] m-auto font-[Onest] font-[500] text-[1rem] leading-[1.275rem]">Boutique Owner</p>
                     </div>
                 </div>
-                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem] ">
+                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem] flex flex-col">
                         <p class="w-[17.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
@@ -170,7 +253,7 @@
                         <p class=" w-[11.28rem] h-[1.3rem] m-auto font-[Onest] font-[500] text-[1rem] leading-[1.275rem]">University Lecturer</p>
                     </div>
                 </div>
-                <div class="w-[23.88rem] h-[24.5rem] flex flex-col mt-[4.1rem] ">
+                <div class="w-[23.88rem] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem]  flex flex-col">
                         <p class="w-[18.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
@@ -299,5 +382,8 @@
         </article>
     </footer>
     <script src="./main.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

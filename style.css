@@ -1,0 +1,13 @@
+#mobileMenuButton:focus ~ #dropdownMobileMenu {
+    display: block;
+}
+
+:root{
+    font-size: 16px 
+}
+
+@media only screen and (max-width:768px) {
+    :root{
+        font-size: 12px
+    }
+}
