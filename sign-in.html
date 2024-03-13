@@ -26,15 +26,16 @@
         <section class="flex w-[55.87rem] h-[32.5rem] m-auto ">
             <article class="w-[54.625rem] h-[4.75rem] text-[1.5rem]">
                 <div class="flex">
-                    <div class=" w-[27.3rem] h-[4.75rem] bg-[#6F3891] rounded-tl-[1.875rem]">
-                        <h2 class=" w-[7.06rem] h-[1.9rem] m-auto pt-[1.3rem] font-[800]  text-[#FCFCFC]">Customer</h2>
-                    </div>
-                    <div class="bg-[#F9B5FF] w-[27.3rem] h-[4.75rem] rounded-tr-[1.875rem]">
-                        <h2 class=" w-[7.06rem] h-[1.9rem] m-auto pt-[1.3rem] font-[800] text-[1.5rem] text-[#210B26]">Driver</h2>
-                    </div>
+                    <button class="w-[27.3rem] h-[4.75rem] bg-[#6F3891] rounded-tl-[1.875rem] m-auto pt-[1.3rem] font-[800]  text-[#FCFCFC]" id="customerHeader">
+                        Customer
+                    </button>
+                    <button class="bg-[#F9B5FF] w-[27.3rem] h-[4.75rem] rounded-tr-[1.875rem] m-auto pt-[1.3rem] font-[800] text-[1.5rem] text-[#210B26]" id="driverHeader">
+                        Driver
+                    </button>
                 </div>    
-                <div class="py-[2.9rem] flex rounded-b-[1.875rem] border-y-[0.1875rem]  border-solid border-[#6F3891]">
-                  <form action="" class="flex flex-row flex-wrap w-[55.875rem]">
+                <div class="py-[2.9rem] flex rounded-b-[1.875rem] border-y-[0.1875rem]  border-solid border-[#6F3891]" id="formContainer">
+                    <!-- Customer form -->
+                  <form action="" class="flex flex-row flex-wrap w-[55.875rem]" id="customerForm">
                         <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[1.7rem] pr-[3.75rem]">
                             Your Name
                             <input type="text" id="name" class=" w-[25.125rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" >
@@ -53,17 +54,37 @@
                         </label>
                         <button class="w-[21.5rem] h-[3.9rem] rounded-[1.875rem] bg-[#6F3891] text-[#F9B5FF] font-[700] text-[1.5rem] mr-[7.3rem]">Sign Up</button>
                         <p class="w-[19.06rem] h-[1.94rem] text-[#6F3891] text-[1.5rem] font-[400] mt-[2.3rem] ">Already registered? <a href="sign-up.html" class="font-[700]">Sign in</a></p>
+                  </form>
+                  <!-- Driver form (hidden by default) -->
+                  <form action=""  style="display: none;" id="driverForm">
+                    <div class="flex flex-row w-[55.875rem] flex-wrap ">
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[1.7rem] pr-[3.75rem]">
+                            Your Full Name
+                            <input type="text" id="name" class=" w-[25.125rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" >
+                        </label>
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[1.7rem]">
+                            Your Email Address
+                            <input type="email" id="name" class=" w-[25.125rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" >
+                        </label>
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[3.69rem] pr-[3.75rem]">
+                            Set Password
+                            <input type="password" id="name" class=" w-[25.125rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" >
+                        </label>
+                        <label for="name" class="flex flex-col font-[400] text-[#6F3891] mb-[1.7rem]">
+                            Driver License Number
+                            <input type="number" id="name" class=" w-[25.125rem] h-[3.125rem] border-[0.0625rem] border-solid border-[#6F3891] rounded-[1.875rem] mt-[1rem]" >
+                        </label>
+                        <button class="w-[21.5rem] h-[3.9rem] rounded-[1.875rem] text-[#6F3891] bg-[#F9B5FF] font-[700] text-[1.5rem] mr-[7.3rem]">Sign Up</button>
+                        <p class="w-[19.06rem] h-[1.94rem] text-[#6F3891] text-[1.5rem] font-[400] mt-[2.3rem] ">Already registered? <a href="sign-up.html" class="font-[700]">Sign in</a></p>
+                    </div>
                   </form>  
                 </div>
             </article>
-            <!-- <article>
-                <div class="bg-[#F9B5FF] w-[27.3rem] h-[4.75rem] rounded-tr-[1.875rem]">
-                    <h2 class=" w-[7.06rem] h-[1.9rem] m-auto pt-[1.3rem] font-[800] text-[1.5rem] text-[#210B26]">Driver</h2>
-                </div>
-            </article> -->
         </section>
    </main>
+   <script src="sign-in.js"></script>
 </body> 
+</html>
 
 
 
