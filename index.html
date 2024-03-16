@@ -22,7 +22,7 @@
     <section class="lg:hidden block w-[100vw] h-[90vh] bg-[#6F3891] px-[1.25rem]">
         <header class=" flex flex-col   w-[100vw] h-[90vh] ">
             <nav class="flex flex-row">
-                <ul class="flex justify-between max-w-[48rem] h-[4.2rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
+                <ul class="flex justify-between max-w-[48rem] h-[4.2rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem] relative">
                     <span class="items-start">
                         <li>
                             <img src="./Assets/contact-page-images/footer-logo.svg" alt="SafeHerTrip-logo" class="">
@@ -32,7 +32,7 @@
                         <!-- MOBILESCREEN MENU-->
                         <li class="  w-[10.125rem] h-[2rem]">
                             <img src="./Assets/contact-page-images/menu-line.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
-                            <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center" id="menudrop">
+                            <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center right-0 left-0 mx-auto" id="menudrop">
                                 <li class="flex ml-[7rem]">
                                     <button id="menu-close">
                                         <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
@@ -335,11 +335,11 @@
             <article >
                 <img src="./Assets/Images/mobile-ios.svg" alt="mobile-ios" class="m-auto mt-[1rem]">
             </article>
-            <article class="w-[13.33rem]  flex m-auto flex-col  ">
+            <article class="w-[20rem] m-auto flex flex-col  ">
                 <h2 class="font-[Onest] font-[700] m-auto mt-[3.07rem] text-[1.5rem] leading-[1.4rem] text-center text-[#210B26] w-[20rem]  ">Request with confidence, Ride with Safety</h2>
-                <p class="w-[22rem] font-[Onest]  font-[400] text-[1rem] leading-[1.3rem]text-center text-[#210B26]">Available for iOS and Android devices.</p>
-                <a href="#" class="w-[16.56rem] h-[4.5rem] rounded-[1.7rem] gap-[0.9rem]  bg-[#6F3891]">
-                    <button class="font-[Onest] font-[700] text-[0.9rem] leading-[1.185rem] text-[#FFFFFF] ">Get Started</button>
+                <p class="w-[22rem] font-[Onest] mt-[0.697rem] font-[400] text-[1rem] leading-[1.3rem]text-center text-[#210B26]">Available for iOS and Android devices.</p>
+                <a href="#" class="w-[16.56rem] h-[4.5rem] rounded-[1.7rem] mt-[1.45rem] gap-[0.9rem]  bg-[#6F3891]">
+                    <button class="font-[Onest] font-[700] text-[1.5rem] mt-[1.5rem] ml-[4rem] leading-[1.185rem] text-[#FFFFFF] ">Get Started</button>
                 </a>
             </article>
         </section>
@@ -442,13 +442,13 @@
         </article>
     </footer>
     <!-- MOBILESCREEN -->
-    <footer class="pt-[1.35rem] w-[100vw] h-[60vh]  bg-[#6F3891] lg:hidden flex flex-col justify-between ">
-        <article class="flex justify-between">
+    <footer class="pt-[1.35rem] w-[100vw] h-[70vh] p-[1.5rem] bg-[#6F3891] lg:hidden flex flex-col justify-between ">
+        <article class="flex justify-between mb-[2.97rem]">
             <img src="./Assets/contact-page-images/footer-logo.svg" alt="hersaferide-logo" class="w-[10.2rem] h-[2.48rem]">
-            <p class=" w-[13.3rem] h-[3.09rem]font-[Onest] font-[700] text-[1.03rem] text-[#FFFFFF] mt-[0.68rem]  inline">Visit Help Center</p>
+            <p class=" w-[10rem] h-[3.09rem]font-[Onest] font-[700] text-[1.03rem] text-[#FFFFFF] mt-[0.68rem]  inline">Visit Help Center</p>
         </article>
-        <ul class=" w-[20rem] flex flex-row flex-wrap  justify-between text-[#FFFFFF] ">
-            <div class=" w-[6.48rem] h-[7.46remrem]  mb-[1.8rem] gap-[0.67rem]"> <!--company-->
+        <ul class=" w-[100vw] flex flex-row flex-wrap  justify-between text-[#FFFFFF] ">
+            <div class=" w-[40%] h-[7.46rem]  mb-[1.8rem] "> <!--company-->
                 <li class="font-[700] text-[0.8rem] leading-[1.03rem] mb-[0.67rem]">Company</li>
                 <a href="index.html">
                     <li class=" font-[400] text-[0.67rem]  block">Home</li>
@@ -463,7 +463,7 @@
                     <li class=" w-[10.5rem] font-[400] text-[0.67rem] block"> Meet The Team Members</li>
                 </a>
             </div>
-            <div class=" w-[6.48rem] h-[7.46remrem]  mb-[1.8rem] gap-[0.67rem] ml-[1rem]">   <!--safety-->
+            <div class=" w-[40%] h-[7.46rem]  mb-[1.8rem]  ml-[1rem]">   <!--safety-->
                 <li class="font-[700] text-[0.8rem] leading-[1.03rem]   mb-[0.67rem]">Safety</li>
                 <a href="#">
                     <li class=" w-[5.73rem] font-[400] text-[0.67rem]  block">Driver Safety</li>
@@ -472,7 +472,7 @@
                     <li class=" w-[5.73rem] font-[400] text-[0.67rem] block">Her Safety</li>
                 </a>
             </div>
-            <div class="mb-[2.19rem] w-[6.48rem] h-[7.46remrem]   gap-[0.67rem] ">   <!--contact us-->
+            <div class="mb-[2.19rem] w-[40%] h-[7.46rem] ">   <!--contact us-->
                 <li class="font-[700] text-[0.8rem] leading-[1.03rem]   mb-[0.67rem]">Contact us</li>
                 <a href="#">
                     <li class=" font-[400] text-[0.67rem] leading-[0.86rem]  mb-[0.34rem] block">The City of Refuge: No 14, Station Road, Along Royalty Hotel, GRA Ilorin, Kwara State.</li>
@@ -484,7 +484,7 @@
                     <li class="font-[400] text-[0.67rem] block">support@hersaferide.com</li>
                 </a>
             </div>
-            <div class="mb-[2.19rem]">   <!--support-->
+            <div class="mb-[2.19rem] w-[40%]">   <!--support-->
                 <div class="w-[7.15rem] h-[7.46remrem] mb-[1.17rem]  gap-[0.67rem]">
                     <li class="font-[700] text-[1.25rem] leading-[1.6rem]  text-[#FFFFFF]">Support</li>
                     <a href="help.html">
@@ -514,7 +514,7 @@
             </div>
         </ul>
         <article>
-            <div class="text-[0.67rem] text-[#FFFFFF] w-[17.5rem] h-[3.78rem] ml-[3.5rem] mb-[3.3rem]">  <!--signup-->
+            <div class="text-[0.67rem] text-[#FFFFFF] fl w-[17.5rem] h-[3.78rem] ml-[8rem] mb-[3.3rem] ">  <!--signup-->
                 <p class="w-[10rem] h-[0.86rem] font-[700] mb-[0.54rem] ">Sign up for Our Newsletters</p>
                 <form action="#" class="w-[17.5rem] h-[2.36rem] rounded-[2.02rem] pl-[0.7rem] pr-[0.25rem] py-[0.67rem] bg-[#FFFFFF] flex flex-row">
                     <input type="email" placeholder="Enter your email address" class="w-[8.36rem] h-[0.8rem] font-[400]  mr-[3.4rem] text-[#BFBEBE] required:">
