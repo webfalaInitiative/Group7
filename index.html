@@ -17,9 +17,9 @@
 
     <title>SafeHerTrip</title>
 </head> 
-<body class="flex flex-col font-[Onest]">
-    <!-- MOBILESCREEN -->
-    <section class="lg:hidden block w-[25.44rem] h-[90vh] bg-[#6F3891] px-[1.25rem]">
+<body class="flex flex-col font-[Onest] sm:w-[100vw]">
+    <!-- MOBILESCREEN  HEADER-->
+    <section class="lg:hidden block w-[100vw] h-[90vh] bg-[#6F3891] px-[1.25rem]">
         <header class=" flex flex-col   w-[100vw] h-[90vh] ">
             <nav class="flex flex-row">
                 <ul class="flex justify-between max-w-[48rem] h-[4.2rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
@@ -29,7 +29,7 @@
                         </li>
                     </span>
                     <div class="lg:hidden inline-flex items-end" >
-                        <!-- MOBILESCREEN -->
+                        <!-- MOBILESCREEN MENU-->
                         <li class="  w-[10.125rem] h-[2rem]">
                             <img src="./Assets/contact-page-images/menu-line.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
                             <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center" id="menudrop">
@@ -71,19 +71,19 @@
             </div>
         </header>
     </section>
-    <!-- LARGESCREEN -->
-    <section class=" lg:block hidden lg:w-[93.92rem] w-[22.93rem] lg:h-[47.81rem] h-[16.93rem] bg-no-repeat bg-cover px-[3rem] py-[2.5rem]" style="background-image: url(./Assets/Images/Frame\ 173.png);">
+    <!-- LARGESCREEN HEADER -->
+    <section class=" lg:block hidden lg:w-[100vw] w-[22.93rem] lg:h-[47.81rem] h-[16.93rem] bg-no-repeat bg-cover px-[3rem] py-[2.5rem]" style="background-image: url(./Assets/Images/Frame\ 173.png);">
         <header class=" flex flex-col justify-between h-[43.81rem] ">
             <nav class="flex flex-row">
-                <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[4.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
+                <ul class="flex  bg-[#FFFFFF] w-[81.25rem] h-[4.2rem] rounded-[2.7rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem]">
                     <span>
                         <li>
                             <img src="./Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[13.9rem] h-[3.23rem] l-[0.56rem] ">
                         </li>
                     </span>
-                    <!-- LARGESCREEN -->
+                    <!-- LARGESCREEN NAV-->
                     <div class="lg:flex hidden">
-                        <span class="flex mt-[0.5rem] m-auto ">
+                        <span class="flex mt-[0.5rem] m-auto mr-[20rem] ">
                             <li>
                                 <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem] hover:font-700">Home</a>
                             </li>
@@ -158,32 +158,33 @@
             </article>
         </header>
     </section>
-    <main class="flex flex-col">
-        <section class=" my-[1.875rem] w-[25.44rem]  flex flex-col bg-[#FCFCFC]">
+    <main class="flex flex-col sm:w-[25.44rem]">
+        <!-- FEATURES -->
+        <section class=" my-[1.875rem] w-[100vw]  flex flex-col bg-[#FCFCFC]">
             <h2 class="w-[11.31rem] h-[3.44rem] font-[700] text-[2.5rem] text-[#210B26] flex m-auto">Features</h2>
-            <article class="lg:flex  block flex-row h-[15,7rem] mt-[2rem] lg:ml-[8rem]">
-                <div class="flex flex-col  p-[2.5rem] mr-[2.5rem] mb-[2rem] rounded-[1.9rem] bg-[#FCDAFF1A]" data-aos="fade-up"
+            <article class="lg:flex justify-between  block flex-row h-[15,7rem] mt-[2rem] lg:ml-[8rem]">
+                <div class="flex flex-col m-auto p-[2.5rem] mb-[2rem]  rounded-[1.9rem] bg-[#FCDAFF1A]" data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom">
-                    <img src="../Assets/Images/real-time-tracking.svg" alt="real-time-tracking" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
-                    <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Real-time Tracking</h3>
-                    <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Stay connected with real-time tracking. Know where your ride is at all times, ensuring a worry-free journey.</p>
+                    <img src="../Assets/Images/real-time-tracking.svg" alt="real-time-tracking" class=" lg:w-[10rem] lg:h-[10rem] w-[8rem] h-[8rem] m-auto ">
+                    <h3 class="w-[15.2rem] h-[2.7rem] m-auto font-[800] text-[#210B26] text-[1.5rem] items-center leading-[2.05rem]">Real-time Tracking</h3>
+                    <p class="w-[17.6rem] h-[2.7rem] m-auto font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Stay connected with real-time tracking. Know where your ride is at all times, ensuring a worry-free journey.</p>
                 </div>
-                <div class="flex flex-col p-[2.5rem] mb-[2rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
+                <div class="flex flex-col m-auto p-[2.5rem] mb-[2rem]  rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom">
-                    <img src="../Assets/Images/driver-verification.svg" alt="driver-verification" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
-                    <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Driver Verification</h3>
-                    <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Rest assured knowing our drivers are vetted for safety & reliability </p>
+                    <img src="../Assets/Images/driver-verification.svg" alt="driver-verification" class="lg:w-[10rem] lg:h-[10rem] w-[8rem] h-[8rem] m-auto">
+                    <h3 class="w-[15.2rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center m-auto leading-[2.05rem]">Driver Verification</h3>
+                    <p class="w-[17.6rem] h-[2.7rem] m-auto font-[400] text-[1rem] text-[#210B26] leading-[1.4rem] text-center">Rest assured knowing our drivers are vetted for safety & reliability </p>
                 </div>
-                <div class="flex flex-col p-[2.5rem] mb-[2rem] mr-[2.5rem] rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
+                <div class="flex flex-col m-auto p-[2.5rem] mb-[2rem] rounded-[1.9rem] bg-[#FCDAFF1A]"data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom">
-                    <img src="../Assets/Images/emergency-assistant.svg" alt="emergency-assistant" class="w-[10rem] h-[10rem] ml-[4.5rem] mb-[1.7rem]">
-                    <h3 class="w-[18rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center ml-[2rem] leading-[2.05rem]">Emergency Assistance </h3>
-                    <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] ml-[1rem] leading-[1.4rem] text-center">Need assistance? Our emergency buttons make it easy to get help when you need it most.</p>
+                    <img src="../Assets/Images/emergency-assistant.svg" alt="emergency-assistant" class="lg:w-[10rem] lg:h-[10rem] w-[8rem] h-[8rem] m-auto">
+                    <h3 class="w-[18rem] h-[2.7rem] font-[800] text-[#210B26] text-[1.5rem] items-center m-auto leading-[2.05rem]">Emergency Assistance </h3>
+                    <p class="w-[17.6rem] h-[2.7rem] font-[400] text-[1rem] text-[#210B26] m-auto leading-[1.4rem] text-center">Need assistance? Our emergency buttons make it easy to get help when you need it most.</p>
                 </div>
             </article>
         </section>
         <!-- LARGESCREEN -->
-        <section class="bg-[#FCDAFF1A] lg:flex hidden flex-col my-[2.19rem] pt-[2.28rem] w-[93.92rem]  h-[93.7rem]">
+        <section class="bg-[#FCDAFF1A] lg:flex hidden flex-col my-[2.19rem] pt-[2.28rem] w-[100vw]  h-[93.7rem]">
             <article class="w-[31.5rem]  flex m-auto flex-col mb-[4.2rem] ">
                 <h2 class="font-[Onest] font-[700] text-[2.5rem] leading-[3.19rem] text-center text-[#210B26]">How HerSafe Ride Works</h2>
                 <p class="w-[25.75rem] mt-[0.6rem] ml-[2.9rem]  font-[Onest] font-[400] text-[1rem] leading-[1.3rem] text-center text-[#210B26]">Curious about how HerSafe Ride ensures your safety? Let us give you a glimpse into our seamless process. Your peace of mind is our mission.</p>
@@ -231,9 +232,9 @@
             </article>
         </section>
         <!-- MOBILESCREEN -->
-        <section class="bg-[#FCDAFF1A] lg:hidden flex flex-col mt-[2.19rem] pt-[2.28rem] w-[25.44rem]  h-[45rem]">
-            <article class="w-[22rem]  flex  flex-col mb-[4.2rem] ">
-                <h2 class="font-[Onest] font-[700] m-auto text-[1.5rem] leading-[1.12rem] text-center text-[#210B26]">How HerSafe Ride Works</h2>
+        <section class="bg-[#FCDAFF1A] lg:hidden flex flex-col mt-[2.19rem] pt-[2.28rem] w-[100vw]  h-[45rem]">
+            <article class="w-[22rem]  flex  flex-col m-auto">
+                <h2 class="font-[Onest] font-[700] m-auto text-[1.5rem] leading-[1.12rem]  text-[#210B26]">How HerSafe Ride Works</h2>
                 <p class="w-[22rem] mt-[0.8rem] m-auto  font-[Onest] font-[400] text-[1rem] leading-[1.3rem] text-center text-[#210B26]">Curious about how HerSafe Ride ensures your safety? Let us give you a glimpse into our seamless process. Your peace of mind is our mission.</p>
             </article>
             <article class="flex  overflow-x-auto flex-row mt-[2rem] lg:ml-[8rem]">
@@ -269,24 +270,24 @@
                 </div>
             </article>
         </section>
-        <section class=" mt-[1.875rem] mb-[3.75rem] lg:h-[36rem] h-[90rem] lg:w-[78.7rem] w-[25.44rem] flex flex-col  bg-[#FCFCFC]">
-            <h2 class="w-[12.2rem] h-[3.4rem] font-[Onest] font-[700] text-[2.5rem] text-[#210B26] m-auto">Feedbacks</h2>
-            <article class="lg:w-[79rem] w-[24rem] lg:h-[31.25rem] h-[90rem] rounded-[1.8rem]  bg-[#FCDAFF1A] lg:flex block flex-row justify-between">
-                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem]" data-aos="zoom-out-down" data-aos-duration="800">
+        <section class=" mt-[1.875rem] mb-[3.75rem] lg:h-[36rem] h-[100rem] w-[100vw] flex flex-col  bg-[#FCFCFC]">
+            <h2 class="w-[12.2rem] h-[3.4rem] font-[Onest] font-[700] text-[2.5rem] text-[#210B26] m-auto my-[2rem]">Feedbacks</h2>
+            <article class="lg:w-[79rem] w-[24rem] lg:h-[31.25rem] h-[90rem] rounded-[1.8rem] m-auto bg-[#FCDAFF1A] lg:flex block flex-row justify-between">
+                <div class="lg:w-[22.68rem] w-[100%] h-[24.5rem] flex flex-col mt-[4.1rem]" data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem]  flex flex-col">
                         <p class="w-[17.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
                             As a small business owner, every detail matters. HerSafe Rider understands the needs of entrepreneurs. The driver verification and emergency assistance are critical for my business-related travels. It's a reliable choice for any business owner.
                         </p>
                         <img src="../Assets/Images/qoutation-mark.svg" alt="qoutation-mark" class="w-[1.6rem] ml-[17.19rem]">
-                        <img src="../Assets/Images/pexels-adrienne-andersen-2552127.svg" alt="Zahra-Ahmed-profile-pics" class="w-[5.625rem] m-auto">
+                        <img src="../Assets/Images/pexels-adrienne-andersen-2552127.svg" alt="Zahra-Ahmed-profile-pics" class="w-[5.625rem] m-auto ">
                     </div>
                     <div class="rounded-b-[1.9rem]  py-[2.75rem] px-[2.3rem]  flex flex-col bg-[#6F3891] text-[#FCFCFC]">
                         <h3 class=" w-[10rem] h-[1.9rem] m-auto font-[Onest] font-[700] text-[1.5rem]  leading-[1.9rem] tracking-[-%]">Zahra Ahmed</h3>
                         <p class=" w-[8.9rem] h-[1.3rem] m-auto font-[Onest] font-[500] text-[1rem] leading-[1.275rem]">Boutique Owner</p>
                     </div>
                 </div>
-                <div class="w-[22.68rem] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
+                <div class="lg:w-[22.68rem] w-[100%] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem] flex flex-col">
                         <p class="w-[17.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
@@ -300,7 +301,7 @@
                         <p class=" w-[11.28rem] h-[1.3rem] m-auto font-[Onest] font-[500] text-[1rem] leading-[1.275rem]">University Lecturer</p>
                     </div>
                 </div>
-                <div class="w-[23.88rem] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
+                <div class="lg:w-[23.88rem] w-[100%] h-[24.5rem] flex flex-col mt-[4.1rem] " data-aos="zoom-out-down" data-aos-duration="800">
                     <div class="bg-[#FCDAFF1A] rounded-t-[1.9rem] pt-[2.75rem] px-[2.3rem]  flex flex-col">
                         <p class="w-[18.8rem] h-[7.5rem] font-[Onest] text-[0.875rem] text-[#210B26] font-[700] leading-[1.125rem] items-start
                         ">
@@ -317,7 +318,7 @@
             </article>
         </section>
         <!-- LARGESCREEN -->
-        <section class=" w-[98vw] h-[33.625rem] py-[5.87rem] px-[5.9rem] bg-[#F6F6F633] lg:flex hidden flex-row m-auto">
+        <section class=" w-[100vw] h-[33.625rem] py-[5.87rem] px-[5.9rem] bg-[#F6F6F633] lg:flex hidden flex-row m-auto">
             <article class="mr-[11.8rem]">
                 <h2 class="w-[36.8rem] h-[7.5rem] font-[Onest] font-[700] text-[3rem] text-[#210B26] leading-[3.825rem] mt-[3rem] ">Request with confidence, Ride with Safety</h2>
                 <p class="w-[27.4rem] h-[2.6rem] font-[Onest] font-[400] text-[1.5rem] text-[#210B26] leading-[1.9rem] my-[2.4rem]">Available for iOS and Android devices.</p>
@@ -330,21 +331,21 @@
             </article>
         </section>
         <!-- MOBILESCREEN -->
-        <section class=" w-[25.44rem] h-[33.625rem]  bg-[#F6F6F633] lg:hidden block flex-row ">
+        <section class=" w-[100vw] h-[33.625rem]  bg-[#F6F6F633] lg:hidden block flex-row ">
             <article >
                 <img src="./Assets/Images/mobile-ios.svg" alt="mobile-ios" class="m-auto mt-[1rem]">
             </article>
-            <article class="w-[13.33rem]  flex pl-[4rem] flex-col my-[3.07rem] ">
+            <article class="w-[13.33rem]  flex m-auto flex-col  ">
                 <h2 class="font-[Onest] font-[700] m-auto text-[1.5rem] leading-[1.4rem] text-center text-[#210B26] w-[20rem]  ">Request with confidence, Ride with Safety</h2>
-                <p class="w-[22rem] mt-[0.8rem]  font-[Onest] font-[400] text-[1rem] leading-[1.3rem] mb-[1.45rem] text-center text-[#210B26]">Available for iOS and Android devices.</p>
-                <a href="#" class="w-[16.56rem] h-[4.5rem] rounded-[1.7rem] px-[5.12rem] py-[1.5rem] gap-[0.9rem] ml-[1rem] bg-[#6F3891]">
+                <p class="w-[22rem] font-[Onest] font-[400] text-[1rem] leading-[1.3rem]text-center text-[#210B26]">Available for iOS and Android devices.</p>
+                <a href="#" class="w-[16.56rem] h-[4.5rem] rounded-[1.7rem] gap-[0.9rem]  bg-[#6F3891]">
                     <button class="font-[Onest] font-[700] text-[0.9rem] leading-[1.185rem] text-[#FFFFFF] ">Get Started</button>
                 </a>
             </article>
         </section>
     </main>
     <!-- LARGESCREEN -->
-    <footer class="pt-[3.4rem] px-[4.1rem] w-[93.5rem] h-[38.31rem] bg-[#6F3891] lg:flex hidden flex-col ">
+    <footer class="pt-[3.4rem] px-[4.1rem] w-[100vw] h-[38.31rem] bg-[#6F3891] lg:flex hidden flex-col ">
         <img src="./Assets/contact-page-images/footer-logo.svg" alt="hersaferide-logo" class="w-[13.3rem] h-[3.09rem]  gap-[0.8rem]">
         <p class="w-[9.4rem] h-[1.7rem] font-[Onest] font-[700] text-[1.03rem] text-[#FFFFFF] mt-[1.9rem] mb-[0.9rem] ml-[2.19rem]">Visit Help Center</p>
         <article class="flex flex-row">
@@ -441,7 +442,7 @@
         </article>
     </footer>
     <!-- MOBILESCREEN -->
-    <footer class="pt-[1.35rem] w-[25.44rem] h-[60vh]  px-[1.6rem] bg-[#6F3891] lg:hidden flex flex-col justify-between ">
+    <footer class="pt-[1.35rem] w-[100vw] h-[60vh]  bg-[#6F3891] lg:hidden flex flex-col justify-between ">
         <article class="flex justify-between">
             <img src="./Assets/contact-page-images/footer-logo.svg" alt="hersaferide-logo" class="w-[10.2rem] h-[2.48rem]">
             <p class=" w-[13.3rem] h-[3.09rem]font-[Onest] font-[700] text-[1.03rem] text-[#FFFFFF] mt-[0.68rem]  inline">Visit Help Center</p>
