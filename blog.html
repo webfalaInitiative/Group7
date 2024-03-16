@@ -11,7 +11,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body class="m-auto items-center justify-center align-center">
-     <header class="mt-[2.56rem] lg:ml-[5.68rem] ml-[1.5rem] lg:w-[78.625rem] w-[24rem] h-[3.75rem] gap-[14.06rem] mb-[1rem] flex">
+    <!-- MOBILESCREEN  HEADER-->
+    <header class=" lg:hidden flex flex-col px-[1.52rem]">
+        <nav class="flex flex-row">
+            <ul class="flex justify-between h-[4.2rem] gap-[14.375rem] mt-[2rem]  relative">
+                <span class="items-start w-[8rem]">
+                    <li>
+                        <img src="./Assets/contact-page-images/footer-logo.svg" alt="SafeHerTrip-logo" class="w-[8rem]">
+                    </li>
+                </span>
+                <span class="lg:hidden inline-flex items-end " >
+                    <!-- MOBILESCREEN MENU-->
+                    <li class=" h-[2.2rem] mb-[2.2rem]">
+                        <img src="./images/Vector.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
+                        <ul class="hidden absolute bg-[#6F3891] text-[1.375rem] text-[#ffffff] rounded-lg shadow-md  font-[400] items-center right-0 left-auto top-[3rem] w-[60vw] h-[80vh] " id="menudrop">
+                            <li class="flex justify-end">
+                                <button id="menu-close">
+                                    <img src="./Assets/contact-page-images/black-close.svg" alt="" class="w-[3rem]">
+                                </button>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="index.html" class="font-[400] hover:font-700 ">Home</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="./about.html" class="font-[400] hover:font-700 ">About</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="./contact.html" class="font-[400] hover:font-700 ">Contact</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[0.5rem] leading-[1.5rem]">
+                                <a href="send-a-message.html"  class="font-[400] hover:font-700  items-center">Send a Message</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="./FAQs.html"  class="font-[400] hover:font-700 ">FAQ</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF]rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="emerg.html" class="font-[400] hover:font-700 ">Emergency</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="help.html"  class="font-[400] hover:font-700 ">Help</a>
+                            </li>
+                            <li class="w-[14rem] h-[4rem] text-[#6F3891]  bg-[#FFFFFF]rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                <a href="blog.html"  class="font-[400] hover:font-700 ">Blog</a>
+                            </li>
+                        </ul>
+                    </li> 
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <!-- LARGESCREEN HEADER -->
+     <header class="mt-[2.56rem] lg:flex hidden lg:ml-[5.68rem] ml-[1.5rem] lg:w-[78.625rem] w-[24rem] h-[3.75rem] gap-[14.06rem] mb-[1rem] ">
         <div class="w-[13.52] h-[3.75rem] mt-[1.7rem]ml-[5.6rem]mr-[70.75rem] p-[2rem]">
             <img src="/images/logo.svg" alt="logo">
         </div>
@@ -300,5 +350,6 @@
                 </div>
             </article>
         </footer>
+<script src="main.js"></script>
 </body>
 </html>

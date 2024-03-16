@@ -20,39 +20,51 @@
 <body class="flex flex-col font-[Onest] sm:w-[100vw]">
     <!-- MOBILESCREEN  HEADER-->
     <section class="lg:hidden block w-[100vw] h-[90vh] bg-[#6F3891] px-[1.25rem]">
-        <header class=" flex flex-col   w-[100vw] h-[90vh] ">
+        <header class=" flex flex-col  h-[90vh] ">
             <nav class="flex flex-row">
-                <ul class="flex justify-between max-w-[48rem] h-[4.2rem] py-[0.56rem] px-[0.875rem] gap-[14.375rem] relative">
-                    <span class="items-start">
+                <ul class="flex justify-between h-[4.2rem] gap-[14.375rem] mt-[2rem]  relative">
+                    <span class="items-start w-[8rem]">
                         <li>
-                            <img src="./Assets/contact-page-images/footer-logo.svg" alt="SafeHerTrip-logo" class="">
+                            <img src="./Assets/contact-page-images/footer-logo.svg" alt="SafeHerTrip-logo" class="w-[8rem]">
                         </li>
                     </span>
-                    <div class="lg:hidden inline-flex items-end" >
+                    <span class="lg:hidden inline-flex items-end" >
                         <!-- MOBILESCREEN MENU-->
-                        <li class="  w-[10.125rem] h-[2rem]">
+                        <li class=" h-[2.2rem] mb-[2.2rem] ml-[3rem] ">
                             <img src="./Assets/contact-page-images/menu-line.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
-                            <ul class="hidden absolute bg-[#6F3891] text-[#FFFFFF] rounded-lg shadow-md px-[3rem] py-[1.25rem] font-[400] items-center right-0 left-0 mx-auto" id="menudrop">
-                                <li class="flex ml-[7rem]">
+                            <ul class="hidden absolute text-[#6F3891] text-[1.375rem] bg-[#ffffff] rounded-lg shadow-md  font-[400] items-center right-0 left-auto top-[3rem] w-[60vw] h-[80vh] " id="menudrop">
+                                <li class="flex justify-end">
                                     <button id="menu-close">
-                                        <img src="../Assets/contact-page-images/close-line.svg" alt="" class="w-[3rem]">
+                                        <img src="./Assets/contact-page-images/black-close.svg" alt="" class="w-[3rem]">
                                     </button>
                                 </li>
-                                <li>
-                                    <a href="index.html" class="w-[5.7rem] h-[2.75rem] text-[#210B26] text-[1.375rem] font-[400] mr-[2rem] hover:font-700">Home</a>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] focus:bg-[#F9B5FF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="index.html" class="font-[400] hover:font-700 text-[#FFFFFF]">Home</a>
                                 </li>
-                                <li class="w-[5.7rem] h-[1.75rem] text-[#210B26] text-[1.375rem] font-[400] hover:font-700">
-                                    <a href="./about.html">About</a>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="./about.html" class="font-[400] hover:font-700 text-[#FFFFFF]">About</a>
                                 </li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[2.47rem] rounded-lg"><a href="./contact.html">Contact</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] px-[0.67rem] rounded-lg w-[10.125rem]"><a href="send-a-message.html">Send a Message</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="./FAQs.html">FAQ</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] rounded-lg"><a href="emerg.html" class="ml-[1.5rem]">Emergency</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="help.html">Help</a></li>
-                                <li class="my-[1rem] hover:bg-[#FFFFFF] hover:text-[#210B26] pl-[3rem] rounded-lg"><a href="blog.html">Blog</a></li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="./contact.html" class="font-[400] hover:font-700 text-[#FFFFFF]">Contact</a>
+                                </li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[0.5rem] leading-[1.5rem]">
+                                    <a href="send-a-message.html"  class="font-[400] hover:font-700 text-[#FFFFFF] items-center">Send a Message</a>
+                                </li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="./FAQs.html"  class="font-[400] hover:font-700 text-[#FFFFFF]">FAQ</a>
+                                </li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="emerg.html" class="font-[400] hover:font-700 text-[#FFFFFF]">Emergency</a>
+                                </li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="help.html"  class="font-[400] hover:font-700 text-[#FFFFFF]">Help</a>
+                                </li>
+                                <li class="w-[14rem] h-[4rem] bg-[#6F3891] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[1rem]">
+                                    <a href="blog.html"  class="font-[400] hover:font-700 text-[#FFFFFF]">Blog</a>
+                                </li>
                             </ul>
                         </li> 
-                    </div>
+                    </span>
                 </ul>
             </nav>
             <div class="flex flex-col m-auto items-start">
