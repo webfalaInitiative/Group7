@@ -13,8 +13,58 @@
 
     <title>Contact</title>
 </head>
-<body class="my-[1.2rem] font-[Onest] ">
-   <header class="mx-[1.6rem] mb-[2.3rem]">
+<body class="my-[1.2rem] font-[Onest] w-[100vw]">
+    <!-- MOBILESCREEN  HEADER-->
+    <header class=" lg:hidden flex flex-col w-[100vw] pl-[1.52rem]">
+        <nav class="flex flex-row">
+            <ul class="flex justify-between h-[4.2rem] gap-[14.375rem] mt-[2rem]  relative">
+                <span class="items-start w-[8rem]">
+                    <li>
+                        <img src="./Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[8rem]">
+                    </li>
+                </span>
+                <span class="lg:hidden inline-flex items-end " >
+                    <!-- MOBILESCREEN MENU-->
+                    <li class=" h-[2.2rem] mb-[2.2rem]">
+                        <img src="./images/Vector.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
+                        <ul class="hidden absolute bg-[#6F3891] text-[1.375rem] text-[#ffffff] rounded-lg shadow-md  font-[400] items-center right-0 left-auto top-[3rem] w-[60vw] hh-[85vh] " id="menudrop">
+                            <li class="flex justify-end">
+                                <button id="menu-close">
+                                    <img src="./images/white-close-icon.svg" alt="white-close-icon" class="w-[3rem]">
+                                </button>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="index.html" class="font-[400] hover:font-[700]">Home</a>
+                            </li>
+                            <li class=" w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="./about.html" class="font-[2400] hover:font-700 ">About</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[2.5rem] pt-[0.5rem]">
+                                <a href="./contact.html" class="font-[400] hover:font-700 ">Contact</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[2.5rem] pt-[0.8rem] leading-[1.2rem]">
+                                <a href="send-a-message.html"  class="font-[400] hover:font-700  items-center">Message</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="./FAQs.html"  class="font-[400] hover:font-700 ">FAQ</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[1.5rem] pt-[0.5rem]">
+                                <a href="emerg.html" class="font-[400] hover:font-700 ">Emergency</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="help.html"  class="font-[400] hover:font-700 ">Help</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="blog.html"  class="font-[400] hover:font-700 ">Blog</a>
+                            </li>
+                        </ul>
+                    </li> 
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <!-- LARGESCREEN HEADER -->
+   <header class="mx-[1.6rem] mb-[2.3rem] lg:flex hidden">
         <nav class="flex flex-row">
             <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[5.2rem] rounded-[2.7rem] py-[0.56rem]  gap-[14.375rem]">
                 <span>
@@ -55,15 +105,15 @@
             </ul>
         </nav>
    </header>
-   <main>
-        <section class="bg-[#6F3891] py-[1.25rem] pl-[3.125rem] pr-[72.4rem] ">
-            <h1 class="text-[#FCFCFC] w-[14.4rem] h-[3.5rem] font-[700] text-[2.7rem]">Contact us</h1>
+   <main class="w-[100vw]">
+        <section class="bg-[#6F3891] py-[1.25rem] pl-[3.125rem] pr-[72.4rem]  lg:w-[100vw] w-[23.4rem]">
+            <h1 class="text-[#FCFCFC] lg:w-[14.4rem] w-[8rem] lg:h-[20rem] h-[0.8rem] font-[700] lg:text-[2.7rem] text-[1rem]">Contact us</h1>
         </section>
-        <section class=" w-[76.25rem] h-[27.25rem] flex py-[9rem] px-[7.9rem]  justify-between ">
+        <section class=" lg:w-[76.25rem] w-[100vw] h-[27.25rem] flex lg:py-[9rem] py-[2.5rem] lg:px-[7.9rem] px-[1.5rem] justify-between ">
             <article class="flex flex-col text-[#210B26] mr-[17.6rem] ">
-                <div class="flex flex-col mb-[4.2rem]">
-                    <h2 class="w-[29rem] h-[3.2rem] font-[700] text-[2.5rem] mb-[0.625rem] ">Office Address</h2>
-                    <p class="flex flex-row font-[600] my-[0.625rem] text-[1.5rem] ">
+                <div class="flex flex-col lg:mb-[4.2rem] mb-[1.6rem]">
+                    <h2 class="lg:w-[29rem] w-[7.5rem] lg:h-[3.2rem] h-[1.125rem] font-[700] lg:text-[2.5rem] text-[1rem]">Office Address</h2>
+                    <p class="flex flex-row font-[600] my-[0.625rem] text-[0.8rem] ">
                         <img src="../Assets/contact-page-images/location-icon.svg" alt="location-icon" class="w-[1.2rem] h-[1.7rem] mr-[0.75rem]">
                         Head Office
                     </p>
