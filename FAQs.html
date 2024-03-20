@@ -17,9 +17,61 @@
     <title>FAQs</title>
 </head>
 <body class="my-[1.2rem] font-[Nunito] flex flex-col ">
-
+    <!-- MOBILESCREEN  HEADER-->
+    <header class=" lg:hidden flex flex-col w-[100vw] pl-[1.52rem] ">
+        <nav class="flex flex-row">
+            <ul class="flex justify-between h-[4.2rem] gap-[14.375rem] mt-[2rem]  relative">
+                <span class="items-start w-[8rem]">
+                    <li>
+                        <img src="./Assets/Images/logo.svg" alt="SafeHerTrip-logo" class="w-[8rem]">
+                    </li>
+                </span>
+                <span class="lg:hidden inline-flex items-end " >
+                    <!-- MOBILESCREEN MENU-->
+                    <li class=" h-[2.2rem] mb-[2.2rem]">
+                        <img src="./images/Vector.svg" alt="menu-line-icon" class="w-[3rem]" id="menu">
+                        <ul class="hidden absolute bg-[#6F3891] text-[1.375rem] text-[#ffffff] rounded-lg shadow-md  font-[400] items-center right-0 left-auto top-[3rem] w-[60vw] h-[85vh]" id="menudrop">
+                            <li class="flex justify-end">
+                                <button id="menu-close">
+                                    <img src="./images/white-close-icon.svg" alt="white-close-icon" class="w-[3rem]">
+                                </button>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="index.html" class="font-[400] hover:font-[700]">Home</a>
+                            </li>
+                            <li class=" w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="./about.html" class="font-[2400] hover:font-700 ">About</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[2.5rem] pt-[0.5rem]">
+                                <a href="./contact.html" class="font-[400] hover:font-700 ">Contact</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="./FAQs.html"  class="font-[400] hover:font-700 ">FAQ</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[1.5rem] pt-[0.5rem]">
+                                <a href="emerg.html" class="font-[400] hover:font-700 ">Emergency</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="help.html"  class="font-[400] hover:font-700 ">Help</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="blog.html"  class="font-[400] hover:font-700 ">Blog</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891] bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[4rem] pt-[0.5rem]">
+                                <a href="./sign-in.html" class="font-[400] hover:font-700">Sign up</a>
+                            </li>
+                            <li class="w-[10rem] h-[2.8rem] text-[#6F3891]  bg-[#FFFFFF] rounded-3xl m-auto mb-[1rem] pl-[3.2rem] pt-[0.5rem]">
+                                <a href="sign-up.html"  class="font-[400] hover:font-700 ">Sign in</a>
+                            </li>
+                        </ul>
+                    </li> 
+                </span>
+            </ul>
+        </nav>
+        <h1 class="w-[100%] bg-[#6F3891] lg:h-[6rem] h-[2.06rem] lg:py-[1.25rem]  py-[0.625rem] lg:pl-[3.125rem] pl-[1.56rem] f0nt-[700] lg:text-[2.7rem] text-[0.8rem] text-[#FCFCFC]">FAQs</h1>
+    </header>
     <!-- LARGESCREEN -->
-   <header class="mx-[1.6rem] w-[100vw] fixed top-0 left-0 right-0 z-50 bg-white shadow-md px-4 py-2">
+   <header class=" w-[100vw] lg:flex flex-col hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-md  ">
         <nav class="flex flex-row">
             <ul class="flex justify-between bg-[#FFFFFF] w-[81.25rem] h-[5.2rem] rounded-[2.7rem] py-[0.56rem]  gap-[14.375rem]">
                 <span>
@@ -60,38 +112,39 @@
                 </span>
             </ul>
         </nav>
-   </header>
-   <main class="flex flex-col mt-[5.2rem]">
         <section class="bg-[#6F3891] py-[1.25rem] pl-[3.125rem] pr-[72.4rem] ">
             <h1 class="text-[#FCFCFC] w-[14.4rem] h-[3.5rem] font-[700] text-[2.7rem] ">FAQs</h1>
         </section>
-        <section class="bg-[#FCDAFF1A] flex px-[6rem]">
-            <article class="flex">
-                <h2 class="w-[31.25rem] h-[7.6rem] font-[700] text-[2.8rem] leading-[3.8rem] text-[#210B26] mt-[9rem] fixed">Frequently Asked Questions</h2>
+   </header>
+   <main class="flex flex-col lg:mt-[11.2rem]">
+        <section class="w-[100vw] faq-section bg-[#FCDAFF1A] flex flex-col lg:px-[6rem] px-[1.56rem]">
+            <article class="lg:flex block mt-[3rem] lg:m-0 m-auto ">
+                <h2 class=" lg:w-[31.25rem] w-[19rem] lg:h-[7.6rem] h-[2.125rem]  font-[700] lg:text-[2.8rem] text-[1.5rem] leading-[3.8rem] text-[#210B26] lg:mt-[9rem] lg:fixed block ml-[1.5rem]">Frequently Asked Questions</h2>
             </article>
-            <article class="w-[45.6rem] h-[50.8rem] flex flex-col mt-[2.2rem] text-[#210B26] font-[700] font-[Nunito] ml-[32rem]">
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[2.19rem]">
-                    <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem]  ">How do I book a ride?
+            <article class="w-[45.6rem] h-[50.8rem] flex flex-col my-[3.5rem] text-[#210B26] font-[700] font-[Nunito] lg:ml-[40rem]  ">
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[4.25rem]">
+                    <h3 class="bg-[#F1F1F1] lg:rounded-[1.06rem] rounded-[0.625rem] lg:pl-[3.3rem] p-[0.625rem] lg:pt-[1.2rem] lg:w-[32.56rem] w-[20.4rem] lg:h-[3.9rem] h-[2.25rem]  ">How do I book a ride?
                     </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem]">To book a ride, simply open our app, enter your pickup and drop-off locations, choose your preferred vehicle option, and confirm your ride. It's that easy!</p>
+                    <p class="w-[30.5rem] hidden h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem]">To book a ride, simply open our app, enter your pickup and drop-off locations, choose your preferred vehicle option, and confirm your ride. It's that easy!</p>
                 </div>
                 <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[4.25rem]">
                     <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem]  ">Can I request a female driver?
                     </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem] ">Yes, you can request a female driver. Our app allows you to specify your preference for a female driver when booking your ride. Simply select the option in the app, and we'll do our best to accommodate your request.</p>
+                    <p class="w-[30.5rem] hidden h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem] my-[2.5rem] ">Yes, you can request a female driver. Our app allows you to specify your preference for a female driver when booking your ride. Simply select the option in the app, and we'll do our best to accommodate your request.</p>
                 </div>
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[6.19rem]">
+                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[4.25rem]">
                     <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">What safety measures are in place for passengers?
                     </h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Your safety is paramount. We verify our drivers, provide real-time tracking, and offer 24/7 emergency assistance. Rest assured, we prioritize your well-being every step of the way.</p>
+                    <p class="w-[30.5rem] h-[3.9rem] hidden font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Your safety is paramount. We verify our drivers, provide real-time tracking, and offer 24/7 emergency assistance. Rest assured, we prioritize your well-being every step of the way.</p>
                 </div>
-                <div class="9.9rem flex flex-col justify-between w-[45.56rem] mb-[19.19rem]">
+                <div class="9.9rem flex flex-col  justify-between w-[45.56rem] ">
                     <h3 class="bg-[#F1F1F1] rounded-[1.06rem] pl-[3.3rem] pt-[1.2rem] w-[32.56rem] h-[3.9rem] mb-[2.2rem] ">What happens in case of an emergency during a ride?</h3>
-                    <p class="w-[30.5rem] h-[3.9rem] font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Our app includes an Emergency Assistance feature. Tap the button, and our support team will assist you in real-time, coordinating with local authorities if necessary</p>
+                    <p class="w-[30.5rem] h-[3.9rem] hidden font-[Onest]  text-[1rem] leading-[1.9rem] pl-[3.3rem]">Our app includes an Emergency Assistance feature. Tap the button, and our support team will assist you in real-time, coordinating with local authorities if necessary</p>
                 </div>
             </article>
         </section>
     </main>
     <script src="./main.js"></script>
+    <script src="faq.js"></script>
 </body>
 </html>

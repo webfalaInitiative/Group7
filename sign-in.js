@@ -67,3 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Kindly ensure all fields are completed accurately. Please confirm that your full name is entered correctly"); 
         }
     })
+
+    document.getElementById('full-name').addEventListener('input', function() {
+        var userInput = this.value;
+        console.log("User full name :", userInput);
+    });
