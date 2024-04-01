@@ -72,3 +72,30 @@ document.addEventListener("DOMContentLoaded", function() {
         var userInput = this.value;
         console.log("User full name :", userInput);
     });
+
+
+
+    // Function to show the error modal
+    function showErrorModal(errorMessage) {
+        document.getElementById('errorMessage').textContent = errorMessage;
+        document.getElementById('errorModal').classList.remove('hidden');
+    }
+
+    // Function to hide the error modal
+    function hideErrorModal() {
+        document.getElementById('errorModal').classList.add('hidden');
+    }
+
+    // Function to validate form
+    function validateForm(event, formType) {
+        event.preventDefault();
+        let isValid = true;
+        // Example validation logic for full name
+        const fullName = document.getElementById('full-name').value;
+        if (fullName.trim() === '') {
+            showErrorModal('Please enter your full name.');
+            isValid = false;
+        }
+        // Add more validation logic for other fields
+        return isValid;
+    }
